@@ -9,21 +9,8 @@ Fitur menu:
 
 **2. Struktur Package**
 
-Posyandu
-└── src/main/java
-    ├── main
-    │   └── main.java
-    ├── controller
-    │   └── AlatPosyanduController.java
-    ├── model
-    │   ├── FasilitasPosyandu.java
-    │   ├── AlatPosyandu.java
-    │   └── PengadaanFasilitas.java
-    ├── DAO
-    │   ├── AlatDAO.java
-    │   └── AlatPosyanduDAOImpl.java
-    └── Database
-        └── DatabaseConnection.java
+<img width="475" height="593" alt="image" src="https://github.com/user-attachments/assets/214ea925-ffe1-41a3-ada0-47538f0342f9" />
+
   <img width="870" height="447" alt="image" src="https://github.com/user-attachments/assets/b4a2f8c8-4719-47eb-a6ef-474bb74e3dbd" />
 
   **3. Alur Program**
