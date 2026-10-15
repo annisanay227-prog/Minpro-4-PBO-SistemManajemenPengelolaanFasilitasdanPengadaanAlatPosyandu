@@ -1,7 +1,7 @@
-##**Posyandu - Aplikasi Manajemen Alat Posyandu (Java MVC + JDBC)**##
+##**Posyandu - Aplikasi Manajemen Alat Posyandu (Java MVC + JDBC)**
 
 **1. Deskripsi Singkat Program**
-Posyandu adalah aplikasi berbasis konsol (CLI) untuk mengelola data alat posyandu. Program menyediakan operasi CRUD (Create, Read, Update, Delete) melalui menu interaktif, dan datanya disimpan di database MySQL (db_posyandu) menggunakan JDBC.
+Posyandu adalah aplikasi berbasis konsol (CLI) untuk mengelola data alat posyandu. Program menyediakan operasi CRUD (Create, Read, Update, Delete) melalui menu interaktif, dan datanya disimpan di database MySQL db_posyandu menggunakan JDBC.
 Program dibangun dengan pola MVC dan menerapkan konsep Pemrograman Berorientasi Objek: encapsulation, inheritance, polymorphism, dan abstraction.
 Fitur menu:
 
@@ -58,6 +58,8 @@ public class AlatPosyandu extends FasilitasPosyandu {
 
 Atribut dan method umum (id, nama, jumlah) didefinisikan sekali di class induk. AlatPosyandu menambahkan atribut khususnya (kategori, kondisi) dan memanggil constructor induk dengan super(...), sehingga kode tidak diulang.
 
+
+
 **5. Polymorphism dan Abstraction**
 *Abstraction
 Interface AlatDAO mendefinisikan operasi data (create, readAll, update, delete) tanpa menjelaskan cara kerjanya. Controller hanya bergantung pada interface ini:
@@ -79,7 +81,7 @@ Controller memanggil a.tampilkanDetail() pada setiap objek di dalam list. Method
 
 **6. Penerapan JDBC**
 JDBC (Java Database Connectivity) adalah standar Java untuk menghubungkan program dengan database. Dengan JDBC, program bisa mengirim perintah SQL ke MySQL dan menerima hasilnya
-*Dependency (pom.xml):
+*Dependency pom.xml
 Java tidak otomatis tahu cara berbicara dengan MySQL. Library mysql-connector-j adalah driver yang menerjemahkan perintah JDBC menjadi bahasa yang dimengerti MySQL. Maven mengunduhnya otomatis karena ditulis di pom.xml.
 <dependency>
     <groupId>com.mysql</groupId>
@@ -87,7 +89,7 @@ Java tidak otomatis tahu cara berbicara dengan MySQL. Library mysql-connector-j 
     <version>8.4.0</version>
 </dependency>
 
-*Koneksi (DatabaseConnection):
+*Koneksi DatabaseConnection
 Class.forName("com.mysql.cj.jdbc.Driver");
 conn = DriverManager.getConnection(
     "jdbc:mysql://localhost:3306/db_posyandu", "root", "");
