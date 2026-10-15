@@ -1,4 +1,4 @@
-##**Posyandu - Aplikasi Manajemen Alat Posyandu (Java MVC + JDBC)**
+## **Posyandu - Aplikasi Manajemen Alat Posyandu (Java MVC + JDBC)**
 
 **1. Deskripsi Singkat Program**
 Posyandu adalah aplikasi berbasis konsol (CLI) untuk mengelola data alat posyandu. Program menyediakan operasi CRUD (Create, Read, Update, Delete) melalui menu interaktif, dan datanya disimpan di database MySQL db_posyandu menggunakan JDBC.
