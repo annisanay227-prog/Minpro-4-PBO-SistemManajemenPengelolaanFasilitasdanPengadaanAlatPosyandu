@@ -1,5 +1,8 @@
-model\FasilitasPosyandu.class
 model\PengadaanFasilitas.class
-service\SistemPosyandu.class
 model\AlatPosyandu.class
+controller\AlatPosyanduController.class
+DAO\AlatDAO.class
+DAO\AlatPosyanduDAOImpl.class
+Database\DatabaseConnection.class
+model\FasilitasPosyandu.class
 main\main.class
